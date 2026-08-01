@@ -7,6 +7,13 @@ import type {
   Team,
   TeamRecord,
 } from '../data/types';
+import {
+  createTiebreakContext,
+  rankDivisionTeams,
+  rankDivisionWinners,
+  rankWildCardTeams,
+  selectWildCardTeams,
+} from './tiebreakers';
 
 function emptyRecord(teamId: string): TeamRecord {
   return {
@@ -69,91 +76,21 @@ export function buildRecords(
   return records;
 }
 
-function headToHeadWinPct(
-  teamA: string,
-  teamB: string,
-  games: Game[],
-  picks: SeasonPicks,
-): number | null {
-  let aWins = 0;
-  let bWins = 0;
-  let played = 0;
-
-  for (const game of games) {
-    const involves =
-      (game.homeTeamId === teamA && game.awayTeamId === teamB) ||
-      (game.homeTeamId === teamB && game.awayTeamId === teamA);
-    if (!involves) continue;
-    const winner = picks[game.id];
-    if (!winner) continue;
-    played++;
-    if (winner === teamA) aWins++;
-    else if (winner === teamB) bWins++;
-  }
-
-  if (played === 0) return null;
-  if (aWins === bWins) return 0.5;
-  return aWins > bWins ? 1 : 0;
-}
-
-function commonOpponentsWinPct(
-  teamA: string,
-  teamB: string,
-  _teams: Team[],
-  games: Game[],
-  _picks: SeasonPicks,
+function toStandingEntry(
+  team: Team,
   records: Map<string, TeamRecord>,
-): number {
-  const opponentsA = new Set<string>();
-  const opponentsB = new Set<string>();
-
-  for (const game of games) {
-    if (game.homeTeamId === teamA) opponentsA.add(game.awayTeamId);
-    if (game.awayTeamId === teamA) opponentsA.add(game.homeTeamId);
-    if (game.homeTeamId === teamB) opponentsB.add(game.awayTeamId);
-    if (game.awayTeamId === teamB) opponentsB.add(game.homeTeamId);
-  }
-
-  const common = [...opponentsA].filter((o) => opponentsB.has(o));
-  if (common.length === 0) return 0;
-
-  let totalPct = 0;
-  for (const oppId of common) {
-    const rec = records.get(oppId);
-    if (rec) totalPct += rec.winPct;
-  }
-  return totalPct / common.length;
-}
-
-function compareTeams(
-  a: TeamRecord,
-  b: TeamRecord,
-  teams: Team[],
-  games: Game[],
-  picks: SeasonPicks,
-  records: Map<string, TeamRecord>,
-  sameDivision: boolean,
-): number {
-  if (b.winPct !== a.winPct) return b.winPct - a.winPct;
-
-  const h2h = headToHeadWinPct(a.teamId, b.teamId, games, picks);
-  if (h2h !== null && h2h !== 0.5) return h2h === 1 ? -1 : 1;
-
-  if (sameDivision) {
-    const aDivPct = computeWinPct(a.divWins, a.divLosses, 0);
-    const bDivPct = computeWinPct(b.divWins, b.divLosses, 0);
-    if (bDivPct !== aDivPct) return bDivPct - aDivPct;
-  }
-
-  const aConfPct = computeWinPct(a.confWins, a.confLosses, 0);
-  const bConfPct = computeWinPct(b.confWins, b.confLosses, 0);
-  if (bConfPct !== aConfPct) return bConfPct - aConfPct;
-
-  const aCommon = commonOpponentsWinPct(a.teamId, b.teamId, teams, games, picks, records);
-  const bCommon = commonOpponentsWinPct(b.teamId, a.teamId, teams, games, picks, records);
-  if (bCommon !== aCommon) return bCommon - aCommon;
-
-  return a.teamId.localeCompare(b.teamId);
+  rank: number,
+  isDivisionWinner: boolean,
+  seed: number | null,
+): StandingEntry {
+  const rec = records.get(team.id)!;
+  return {
+    ...rec,
+    team,
+    rank,
+    isDivisionWinner,
+    seed,
+  };
 }
 
 function sortDivisionTeams(
@@ -163,21 +100,15 @@ function sortDivisionTeams(
   games: Game[],
   picks: SeasonPicks,
 ): StandingEntry[] {
-  const sorted = [...divisionTeams].sort((ta, tb) => {
-    const ra = records.get(ta.id)!;
-    const rb = records.get(tb.id)!;
-    return compareTeams(ra, rb, teams, games, picks, records, true);
-  });
+  const ctx = createTiebreakContext(teams, games, picks, records);
+  const rankedIds = rankDivisionTeams(
+    divisionTeams.map((t) => t.id),
+    ctx,
+  );
 
-  return sorted.map((team, i) => {
-    const rec = records.get(team.id)!;
-    return {
-      ...rec,
-      team,
-      rank: i + 1,
-      isDivisionWinner: i === 0,
-      seed: null,
-    };
+  return rankedIds.map((id, i) => {
+    const team = divisionTeams.find((t) => t.id === id)!;
+    return toStandingEntry(team, records, i + 1, i === 0, null);
   });
 }
 
@@ -191,6 +122,7 @@ export function computeStandings(
   function buildConference(conf: Conference): ConferenceStandings {
     const confTeams = teams.filter((t) => t.conference === conf);
     const divisions = [...new Set(confTeams.map((t) => t.division))].sort();
+    const ctx = createTiebreakContext(teams, games, picks, records);
 
     const divisionStandings = divisions.map((division) => {
       const divTeams = confTeams.filter((t) => t.division === division);
@@ -200,49 +132,35 @@ export function computeStandings(
       };
     });
 
-    const divisionWinners = divisionStandings.map((d) => d.teams[0]);
-    const wildCardCandidates = confTeams
-      .filter((t) => !divisionWinners.some((w) => w.team.id === t.id))
-      .map((t) => records.get(t.id)!)
-      .sort((a, b) => compareTeams(a, b, teams, games, picks, records, false));
+    const divisionWinnerIds = divisionStandings.map((d) => d.teams[0].team.id);
 
-    const wildCards = wildCardCandidates.slice(0, 3).map((rec, i) => ({
-      ...rec,
-      team: teams.find((t) => t.id === rec.teamId)!,
-      rank: i + 1,
-      isDivisionWinner: false,
-      seed: null as number | null,
-    }));
+    const seededDivisionWinnerIds = rankDivisionWinners(divisionWinnerIds, ctx);
+    const wildCardCandidateIds = confTeams
+      .filter((t) => !divisionWinnerIds.includes(t.id))
+      .map((t) => t.id);
 
-    const allSeeds = [...divisionWinners, ...wildCards].sort((a, b) =>
-      compareTeams(
-        records.get(a.team.id)!,
-        records.get(b.team.id)!,
-        teams,
-        games,
-        picks,
-        records,
-        a.team.division === b.team.division,
-      ),
-    );
+    const wildCardIds = selectWildCardTeams(wildCardCandidateIds, 3, ctx);
+    const seededWildCardIds = rankWildCardTeams(wildCardIds, ctx);
 
-    const seeded = allSeeds.map((entry, i) => ({
-      ...entry,
-      seed: i + 1,
-    }));
+    const seedOrder = [...seededDivisionWinnerIds, ...seededWildCardIds];
+    const seeds: StandingEntry[] = seedOrder.map((teamId, i) => {
+      const isDivisionWinner = divisionWinnerIds.includes(teamId);
+      const team = teams.find((t) => t.id === teamId)!;
+      return toStandingEntry(team, records, i + 1, isDivisionWinner, i + 1);
+    });
 
     for (const div of divisionStandings) {
-      for (const t of div.teams) {
-        const seedEntry = seeded.find((s) => s.team.id === t.team.id);
-        t.seed = seedEntry?.seed ?? null;
-        t.isDivisionWinner = seedEntry ? seedEntry.isDivisionWinner : t.rank === 1;
+      for (const entry of div.teams) {
+        const seedEntry = seeds.find((s) => s.team.id === entry.team.id);
+        entry.seed = seedEntry?.seed ?? null;
+        entry.isDivisionWinner = divisionWinnerIds.includes(entry.team.id);
       }
     }
 
     return {
       conference: conf,
       divisions: divisionStandings,
-      seeds: seeded,
+      seeds,
     };
   }
 

@@ -13,8 +13,8 @@ export function StandingsPanel({ afc, nfc }: StandingsPanelProps) {
         <ConferenceStandingsTable standings={nfc} />
       </div>
 
-      <p className="tiebreaker-note" title="Simplified tiebreakers: win pct → head-to-head → division record → conference record → common opponents → fallback">
-        Tiebreakers: win pct → H2H → div record → conf record → common opponents → fallback
+      <p className="tiebreaker-note" title="NFL seeding: seeds 1–4 are division winners; seeds 5–7 are wild cards. Division winners are ordered by record then wild-card tiebreakers. Wild-card spots use division and wild-card tiebreaker procedures. Score-based steps (points, net points) are skipped when scores are unavailable; coin toss is used as the final step.">
+        Seeding: top 4 seeds = division winners; seeds 5–7 = wild cards. Tiebreakers follow NFL.com procedures (H2H → div/conf record → common games → SOV → SOS → coin toss).
       </p>
     </div>
   );
