@@ -71,11 +71,13 @@ function buildDivisional(
 ): BracketMatchup[] {
   const oneSeed = getSeedTeam(seeds, 1);
   const wcWinners = getWcWinners(wc).sort((a, b) => a.seed - b.seed);
+  const div1Slot = `${conf.toLowerCase()}-div-1vLow`;
+  const divOtherSlot = `${conf.toLowerCase()}-div-other`;
 
   if (wcWinners.length === 0) {
     return [
       {
-        slotId: `${conf.toLowerCase()}-div-1vLow`,
+        slotId: div1Slot,
         round: 'div',
         conference: conf,
         teamA: oneSeed,
@@ -84,7 +86,7 @@ function buildDivisional(
         winnerId: null,
       },
       {
-        slotId: `${conf.toLowerCase()}-div-other`,
+        slotId: divOtherSlot,
         round: 'div',
         conference: conf,
         teamA: null,
@@ -94,20 +96,19 @@ function buildDivisional(
     ];
   }
 
-  const lowest = wcWinners[0];
-  const others = wcWinners.slice(1);
-  const div1Slot = `${conf.toLowerCase()}-div-1vLow`;
-  const divOtherSlot = `${conf.toLowerCase()}-div-other`;
+  // #1 seed always faces the lowest remaining seed (highest seed number among WC winners).
+  const lowestRemaining = wcWinners[wcWinners.length - 1];
+  const others = wcWinners.slice(0, -1);
 
   const div1: BracketMatchup = {
     slotId: div1Slot,
     round: 'div',
     conference: conf,
     teamA: oneSeed,
-    teamB: lowest.team,
+    teamB: lowestRemaining.team,
     seedA: 1,
-    seedB: lowest.seed,
-    winnerId: resolveWinner(div1Slot, oneSeed, lowest.team, picks),
+    seedB: lowestRemaining.seed,
+    winnerId: resolveWinner(div1Slot, oneSeed, lowestRemaining.team, picks),
   };
 
   let teamA: Team | null = null;
