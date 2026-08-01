@@ -354,7 +354,7 @@ function pickOneDivisionMulti(teamIds: string[], ctx: TiebreakContext): string {
   return remaining[0];
 }
 
-/** Rank teams within a division using NFL division tiebreakers. */
+/** Rank teams within a division: win percentage first, then NFL division tiebreakers. */
 export function rankDivisionTeams(teamIds: string[], ctx: TiebreakContext): string[] {
   const ranked: string[] = [];
   let remaining = [...teamIds];
@@ -365,10 +365,9 @@ export function rankDivisionTeams(teamIds: string[], ctx: TiebreakContext): stri
       break;
     }
 
-    const samePct = remaining.filter(
-      (id) => ctx.records.get(id)!.winPct === ctx.records.get(remaining[0])!.winPct,
-    );
-    const rest = remaining.filter((id) => !samePct.includes(id));
+    const topPct = Math.max(...remaining.map((id) => ctx.records.get(id)!.winPct));
+    const samePct = remaining.filter((id) => ctx.records.get(id)!.winPct === topPct);
+    const rest = remaining.filter((id) => ctx.records.get(id)!.winPct !== topPct);
 
     if (samePct.length === 1) {
       ranked.push(samePct[0]);

@@ -101,6 +101,48 @@ describe('NFL seeding rules', () => {
     expect(wildCards[0]).toBe('2');
   });
 
+  it('ranks division teams by win percentage in the standings overview', () => {
+    const games: Game[] = [
+      game('g1', '1', '2'),
+      game('g2', '3', '4'),
+      game('g3', '1', '3'),
+      game('g4', '2', '4'),
+    ];
+
+    const seasonPicks = picks([
+      ['g1', '1'],
+      ['g2', '3'],
+      ['g3', '1'],
+      ['g4', '2'],
+    ]);
+
+    const subset = teams.slice(0, 4);
+    const { afc } = computeStandings(
+      [
+        ...subset,
+        ...teams.slice(4),
+        ...Array.from({ length: 24 }, (_, i) => ({
+          id: `nfc-${i}`,
+          abbr: `N${i}`,
+          name: `NFC ${i}`,
+          conference: 'NFC' as const,
+          division: `NFC ${['East', 'North', 'South', 'West'][Math.floor(i / 6)]}`,
+          color: '#999',
+        })),
+      ],
+      games,
+      seasonPicks,
+    );
+
+    const east = afc.divisions.find((d) => d.division === 'AFC East')!;
+    expect(east.teams.map((t) => t.team.abbr)).toEqual(['A', 'B']);
+    expect(east.teams[0].winPct).toBeGreaterThan(east.teams[1].winPct);
+
+    const north = afc.divisions.find((d) => d.division === 'AFC North')!;
+    expect(north.teams.map((t) => t.team.abbr)).toEqual(['C', 'D']);
+    expect(north.teams[0].winPct).toBeGreaterThan(north.teams[1].winPct);
+  });
+
   it('breaks division ties by head-to-head before conference record', () => {
     const games: Game[] = [
       game('g1', '1', '2'),
