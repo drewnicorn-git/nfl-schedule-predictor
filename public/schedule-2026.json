@@ -1,0 +1,2167 @@
+{
+  "season": 2026,
+  "teams": [
+    {
+      "id": "2",
+      "abbr": "BUF",
+      "name": "Buffalo Bills",
+      "conference": "AFC",
+      "division": "AFC East",
+      "color": "#00338d"
+    },
+    {
+      "id": "15",
+      "abbr": "MIA",
+      "name": "Miami Dolphins",
+      "conference": "AFC",
+      "division": "AFC East",
+      "color": "#008e97"
+    },
+    {
+      "id": "17",
+      "abbr": "NE",
+      "name": "New England Patriots",
+      "conference": "AFC",
+      "division": "AFC East",
+      "color": "#002a5c"
+    },
+    {
+      "id": "20",
+      "abbr": "NYJ",
+      "name": "New York Jets",
+      "conference": "AFC",
+      "division": "AFC East",
+      "color": "#115740"
+    },
+    {
+      "id": "33",
+      "abbr": "BAL",
+      "name": "Baltimore Ravens",
+      "conference": "AFC",
+      "division": "AFC North",
+      "color": "#29126f"
+    },
+    {
+      "id": "4",
+      "abbr": "CIN",
+      "name": "Cincinnati Bengals",
+      "conference": "AFC",
+      "division": "AFC North",
+      "color": "#fb4f14"
+    },
+    {
+      "id": "5",
+      "abbr": "CLE",
+      "name": "Cleveland Browns",
+      "conference": "AFC",
+      "division": "AFC North",
+      "color": "#472a08"
+    },
+    {
+      "id": "23",
+      "abbr": "PIT",
+      "name": "Pittsburgh Steelers",
+      "conference": "AFC",
+      "division": "AFC North",
+      "color": "#000000"
+    },
+    {
+      "id": "34",
+      "abbr": "HOU",
+      "name": "Houston Texans",
+      "conference": "AFC",
+      "division": "AFC South",
+      "color": "#00143f"
+    },
+    {
+      "id": "11",
+      "abbr": "IND",
+      "name": "Indianapolis Colts",
+      "conference": "AFC",
+      "division": "AFC South",
+      "color": "#003b75"
+    },
+    {
+      "id": "30",
+      "abbr": "JAC",
+      "name": "Jacksonville Jaguars",
+      "conference": "AFC",
+      "division": "AFC South",
+      "color": "#007487"
+    },
+    {
+      "id": "10",
+      "abbr": "TEN",
+      "name": "Tennessee Titans",
+      "conference": "AFC",
+      "division": "AFC South",
+      "color": "#4495d2"
+    },
+    {
+      "id": "7",
+      "abbr": "DEN",
+      "name": "Denver Broncos",
+      "conference": "AFC",
+      "division": "AFC West",
+      "color": "#0a2343"
+    },
+    {
+      "id": "12",
+      "abbr": "KC",
+      "name": "Kansas City Chiefs",
+      "conference": "AFC",
+      "division": "AFC West",
+      "color": "#e31837"
+    },
+    {
+      "id": "13",
+      "abbr": "LV",
+      "name": "Las Vegas Raiders",
+      "conference": "AFC",
+      "division": "AFC West",
+      "color": "#000000"
+    },
+    {
+      "id": "24",
+      "abbr": "LAC",
+      "name": "Los Angeles Chargers",
+      "conference": "AFC",
+      "division": "AFC West",
+      "color": "#0080c6"
+    },
+    {
+      "id": "6",
+      "abbr": "DAL",
+      "name": "Dallas Cowboys",
+      "conference": "NFC",
+      "division": "NFC East",
+      "color": "#002a5c"
+    },
+    {
+      "id": "19",
+      "abbr": "NYG",
+      "name": "New York Giants",
+      "conference": "NFC",
+      "division": "NFC East",
+      "color": "#003c7f"
+    },
+    {
+      "id": "21",
+      "abbr": "PHI",
+      "name": "Philadelphia Eagles",
+      "conference": "NFC",
+      "division": "NFC East",
+      "color": "#06424d"
+    },
+    {
+      "id": "28",
+      "abbr": "WAS",
+      "name": "Washington Commanders",
+      "conference": "NFC",
+      "division": "NFC East",
+      "color": "#5a1414"
+    },
+    {
+      "id": "3",
+      "abbr": "CHI",
+      "name": "Chicago Bears",
+      "conference": "NFC",
+      "division": "NFC North",
+      "color": "#0b1c3a"
+    },
+    {
+      "id": "8",
+      "abbr": "DET",
+      "name": "Detroit Lions",
+      "conference": "NFC",
+      "division": "NFC North",
+      "color": "#0076b6"
+    },
+    {
+      "id": "9",
+      "abbr": "GB",
+      "name": "Green Bay Packers",
+      "conference": "NFC",
+      "division": "NFC North",
+      "color": "#204e32"
+    },
+    {
+      "id": "16",
+      "abbr": "MIN",
+      "name": "Minnesota Vikings",
+      "conference": "NFC",
+      "division": "NFC North",
+      "color": "#4f2683"
+    },
+    {
+      "id": "1",
+      "abbr": "ATL",
+      "name": "Atlanta Falcons",
+      "conference": "NFC",
+      "division": "NFC South",
+      "color": "#a71930"
+    },
+    {
+      "id": "29",
+      "abbr": "CAR",
+      "name": "Carolina Panthers",
+      "conference": "NFC",
+      "division": "NFC South",
+      "color": "#0085ca"
+    },
+    {
+      "id": "18",
+      "abbr": "NO",
+      "name": "New Orleans Saints",
+      "conference": "NFC",
+      "division": "NFC South",
+      "color": "#d3bc8d"
+    },
+    {
+      "id": "27",
+      "abbr": "TB",
+      "name": "Tampa Bay Buccaneers",
+      "conference": "NFC",
+      "division": "NFC South",
+      "color": "#bd1c36"
+    },
+    {
+      "id": "22",
+      "abbr": "ARI",
+      "name": "Arizona Cardinals",
+      "conference": "NFC",
+      "division": "NFC West",
+      "color": "#a40227"
+    },
+    {
+      "id": "14",
+      "abbr": "LAR",
+      "name": "Los Angeles Rams",
+      "conference": "NFC",
+      "division": "NFC West",
+      "color": "#003594"
+    },
+    {
+      "id": "25",
+      "abbr": "SF",
+      "name": "San Francisco 49ers",
+      "conference": "NFC",
+      "division": "NFC West",
+      "color": "#aa0000"
+    },
+    {
+      "id": "26",
+      "abbr": "SEA",
+      "name": "Seattle Seahawks",
+      "conference": "NFC",
+      "division": "NFC West",
+      "color": "#002a5c"
+    }
+  ],
+  "games": [
+    {
+      "id": "401872656",
+      "week": 1,
+      "date": "2026-09-10T00:20Z",
+      "homeTeamId": "26",
+      "awayTeamId": "17"
+    },
+    {
+      "id": "401872657",
+      "week": 1,
+      "date": "2026-09-11T00:35Z",
+      "homeTeamId": "14",
+      "awayTeamId": "25"
+    },
+    {
+      "id": "401872925",
+      "week": 1,
+      "date": "2026-09-13T17:00Z",
+      "homeTeamId": "4",
+      "awayTeamId": "27"
+    },
+    {
+      "id": "401872923",
+      "week": 1,
+      "date": "2026-09-13T17:00Z",
+      "homeTeamId": "8",
+      "awayTeamId": "18"
+    },
+    {
+      "id": "401872924",
+      "week": 1,
+      "date": "2026-09-13T17:00Z",
+      "homeTeamId": "10",
+      "awayTeamId": "20"
+    },
+    {
+      "id": "401872659",
+      "week": 1,
+      "date": "2026-09-13T17:00Z",
+      "homeTeamId": "11",
+      "awayTeamId": "33"
+    },
+    {
+      "id": "401872658",
+      "week": 1,
+      "date": "2026-09-13T17:00Z",
+      "homeTeamId": "23",
+      "awayTeamId": "1"
+    },
+    {
+      "id": "401872661",
+      "week": 1,
+      "date": "2026-09-13T17:00Z",
+      "homeTeamId": "29",
+      "awayTeamId": "3"
+    },
+    {
+      "id": "401872922",
+      "week": 1,
+      "date": "2026-09-13T17:00Z",
+      "homeTeamId": "30",
+      "awayTeamId": "5"
+    },
+    {
+      "id": "401872660",
+      "week": 1,
+      "date": "2026-09-13T17:00Z",
+      "homeTeamId": "34",
+      "awayTeamId": "2"
+    },
+    {
+      "id": "401872928",
+      "week": 1,
+      "date": "2026-09-13T20:25Z",
+      "homeTeamId": "13",
+      "awayTeamId": "15"
+    },
+    {
+      "id": "401872927",
+      "week": 1,
+      "date": "2026-09-13T20:25Z",
+      "homeTeamId": "16",
+      "awayTeamId": "9"
+    },
+    {
+      "id": "401872929",
+      "week": 1,
+      "date": "2026-09-13T20:25Z",
+      "homeTeamId": "21",
+      "awayTeamId": "28"
+    },
+    {
+      "id": "401872926",
+      "week": 1,
+      "date": "2026-09-13T20:25Z",
+      "homeTeamId": "24",
+      "awayTeamId": "22"
+    },
+    {
+      "id": "401872930",
+      "week": 1,
+      "date": "2026-09-14T00:20Z",
+      "homeTeamId": "19",
+      "awayTeamId": "6"
+    },
+    {
+      "id": "401872931",
+      "week": 1,
+      "date": "2026-09-15T00:15Z",
+      "homeTeamId": "12",
+      "awayTeamId": "7"
+    },
+    {
+      "id": "401872932",
+      "week": 2,
+      "date": "2026-09-18T00:15Z",
+      "homeTeamId": "2",
+      "awayTeamId": "8"
+    },
+    {
+      "id": "401872933",
+      "week": 2,
+      "date": "2026-09-20T17:00Z",
+      "homeTeamId": "1",
+      "awayTeamId": "29"
+    },
+    {
+      "id": "401872937",
+      "week": 2,
+      "date": "2026-09-20T17:00Z",
+      "homeTeamId": "3",
+      "awayTeamId": "16"
+    },
+    {
+      "id": "401872939",
+      "week": 2,
+      "date": "2026-09-20T17:00Z",
+      "homeTeamId": "10",
+      "awayTeamId": "21"
+    },
+    {
+      "id": "401872946",
+      "week": 2,
+      "date": "2026-09-20T17:00Z",
+      "homeTeamId": "17",
+      "awayTeamId": "23"
+    },
+    {
+      "id": "401872936",
+      "week": 2,
+      "date": "2026-09-20T17:00Z",
+      "homeTeamId": "20",
+      "awayTeamId": "9"
+    },
+    {
+      "id": "401872935",
+      "week": 2,
+      "date": "2026-09-20T17:00Z",
+      "homeTeamId": "27",
+      "awayTeamId": "5"
+    },
+    {
+      "id": "401872938",
+      "week": 2,
+      "date": "2026-09-20T17:00Z",
+      "homeTeamId": "33",
+      "awayTeamId": "18"
+    },
+    {
+      "id": "401872934",
+      "week": 2,
+      "date": "2026-09-20T17:00Z",
+      "homeTeamId": "34",
+      "awayTeamId": "4"
+    },
+    {
+      "id": "401872940",
+      "week": 2,
+      "date": "2026-09-20T20:05Z",
+      "homeTeamId": "7",
+      "awayTeamId": "30"
+    },
+    {
+      "id": "401872941",
+      "week": 2,
+      "date": "2026-09-20T20:05Z",
+      "homeTeamId": "24",
+      "awayTeamId": "13"
+    },
+    {
+      "id": "401872944",
+      "week": 2,
+      "date": "2026-09-20T20:25Z",
+      "homeTeamId": "6",
+      "awayTeamId": "28"
+    },
+    {
+      "id": "401872943",
+      "week": 2,
+      "date": "2026-09-20T20:25Z",
+      "homeTeamId": "22",
+      "awayTeamId": "26"
+    },
+    {
+      "id": "401872942",
+      "week": 2,
+      "date": "2026-09-20T20:25Z",
+      "homeTeamId": "25",
+      "awayTeamId": "15"
+    },
+    {
+      "id": "401872945",
+      "week": 2,
+      "date": "2026-09-21T00:20Z",
+      "homeTeamId": "12",
+      "awayTeamId": "11"
+    },
+    {
+      "id": "401872947",
+      "week": 2,
+      "date": "2026-09-22T00:15Z",
+      "homeTeamId": "14",
+      "awayTeamId": "19"
+    },
+    {
+      "id": "401872948",
+      "week": 3,
+      "date": "2026-09-25T00:15Z",
+      "homeTeamId": "9",
+      "awayTeamId": "1"
+    },
+    {
+      "id": "401872953",
+      "week": 3,
+      "date": "2026-09-27T17:00Z",
+      "homeTeamId": "2",
+      "awayTeamId": "24"
+    },
+    {
+      "id": "401872949",
+      "week": 3,
+      "date": "2026-09-27T17:00Z",
+      "homeTeamId": "5",
+      "awayTeamId": "29"
+    },
+    {
+      "id": "401872954",
+      "week": 3,
+      "date": "2026-09-27T17:00Z",
+      "homeTeamId": "8",
+      "awayTeamId": "20"
+    },
+    {
+      "id": "401872951",
+      "week": 3,
+      "date": "2026-09-27T17:00Z",
+      "homeTeamId": "11",
+      "awayTeamId": "34"
+    },
+    {
+      "id": "401872952",
+      "week": 3,
+      "date": "2026-09-27T17:00Z",
+      "homeTeamId": "15",
+      "awayTeamId": "12"
+    },
+    {
+      "id": "401872956",
+      "week": 3,
+      "date": "2026-09-27T17:00Z",
+      "homeTeamId": "19",
+      "awayTeamId": "10"
+    },
+    {
+      "id": "401872950",
+      "week": 3,
+      "date": "2026-09-27T17:00Z",
+      "homeTeamId": "23",
+      "awayTeamId": "4"
+    },
+    {
+      "id": "401872955",
+      "week": 3,
+      "date": "2026-09-27T17:00Z",
+      "homeTeamId": "28",
+      "awayTeamId": "26"
+    },
+    {
+      "id": "401872957",
+      "week": 3,
+      "date": "2026-09-27T17:00Z",
+      "homeTeamId": "30",
+      "awayTeamId": "17"
+    },
+    {
+      "id": "401872958",
+      "week": 3,
+      "date": "2026-09-27T20:05Z",
+      "homeTeamId": "25",
+      "awayTeamId": "22"
+    },
+    {
+      "id": "401872959",
+      "week": 3,
+      "date": "2026-09-27T20:05Z",
+      "homeTeamId": "27",
+      "awayTeamId": "16"
+    },
+    {
+      "id": "401872960",
+      "week": 3,
+      "date": "2026-09-27T20:25Z",
+      "homeTeamId": "6",
+      "awayTeamId": "33"
+    },
+    {
+      "id": "401872961",
+      "week": 3,
+      "date": "2026-09-27T20:25Z",
+      "homeTeamId": "18",
+      "awayTeamId": "13"
+    },
+    {
+      "id": "401872962",
+      "week": 3,
+      "date": "2026-09-28T00:20Z",
+      "homeTeamId": "7",
+      "awayTeamId": "14"
+    },
+    {
+      "id": "401872963",
+      "week": 3,
+      "date": "2026-09-29T00:15Z",
+      "homeTeamId": "3",
+      "awayTeamId": "21"
+    },
+    {
+      "id": "401872964",
+      "week": 4,
+      "date": "2026-10-02T00:15Z",
+      "homeTeamId": "5",
+      "awayTeamId": "23"
+    },
+    {
+      "id": "401872965",
+      "week": 4,
+      "date": "2026-10-04T13:30Z",
+      "homeTeamId": "28",
+      "awayTeamId": "11"
+    },
+    {
+      "id": "401872971",
+      "week": 4,
+      "date": "2026-10-04T17:00Z",
+      "homeTeamId": "2",
+      "awayTeamId": "17"
+    },
+    {
+      "id": "401872972",
+      "week": 4,
+      "date": "2026-10-04T17:00Z",
+      "homeTeamId": "3",
+      "awayTeamId": "20"
+    },
+    {
+      "id": "401872969",
+      "week": 4,
+      "date": "2026-10-04T17:00Z",
+      "homeTeamId": "4",
+      "awayTeamId": "30"
+    },
+    {
+      "id": "401872966",
+      "week": 4,
+      "date": "2026-10-04T17:00Z",
+      "homeTeamId": "19",
+      "awayTeamId": "22"
+    },
+    {
+      "id": "401872970",
+      "week": 4,
+      "date": "2026-10-04T17:00Z",
+      "homeTeamId": "21",
+      "awayTeamId": "14"
+    },
+    {
+      "id": "401872968",
+      "week": 4,
+      "date": "2026-10-04T17:00Z",
+      "homeTeamId": "27",
+      "awayTeamId": "9"
+    },
+    {
+      "id": "401872973",
+      "week": 4,
+      "date": "2026-10-04T17:00Z",
+      "homeTeamId": "33",
+      "awayTeamId": "10"
+    },
+    {
+      "id": "401872967",
+      "week": 4,
+      "date": "2026-10-04T17:00Z",
+      "homeTeamId": "34",
+      "awayTeamId": "6"
+    },
+    {
+      "id": "401872974",
+      "week": 4,
+      "date": "2026-10-04T20:05Z",
+      "homeTeamId": "16",
+      "awayTeamId": "15"
+    },
+    {
+      "id": "401872976",
+      "week": 4,
+      "date": "2026-10-04T20:25Z",
+      "homeTeamId": "13",
+      "awayTeamId": "12"
+    },
+    {
+      "id": "401872975",
+      "week": 4,
+      "date": "2026-10-04T20:25Z",
+      "homeTeamId": "25",
+      "awayTeamId": "7"
+    },
+    {
+      "id": "401872977",
+      "week": 4,
+      "date": "2026-10-04T20:25Z",
+      "homeTeamId": "26",
+      "awayTeamId": "24"
+    },
+    {
+      "id": "401872978",
+      "week": 4,
+      "date": "2026-10-05T00:20Z",
+      "homeTeamId": "29",
+      "awayTeamId": "8"
+    },
+    {
+      "id": "401872979",
+      "week": 4,
+      "date": "2026-10-06T00:15Z",
+      "homeTeamId": "18",
+      "awayTeamId": "1"
+    },
+    {
+      "id": "401872980",
+      "week": 5,
+      "date": "2026-10-09T00:15Z",
+      "homeTeamId": "6",
+      "awayTeamId": "27"
+    },
+    {
+      "id": "401872981",
+      "week": 5,
+      "date": "2026-10-11T13:30Z",
+      "homeTeamId": "30",
+      "awayTeamId": "21"
+    },
+    {
+      "id": "401872984",
+      "week": 5,
+      "date": "2026-10-11T17:00Z",
+      "homeTeamId": "10",
+      "awayTeamId": "34"
+    },
+    {
+      "id": "401872982",
+      "week": 5,
+      "date": "2026-10-11T17:00Z",
+      "homeTeamId": "15",
+      "awayTeamId": "4"
+    },
+    {
+      "id": "401872986",
+      "week": 5,
+      "date": "2026-10-11T17:00Z",
+      "homeTeamId": "17",
+      "awayTeamId": "13"
+    },
+    {
+      "id": "401872987",
+      "week": 5,
+      "date": "2026-10-11T17:00Z",
+      "homeTeamId": "18",
+      "awayTeamId": "16"
+    },
+    {
+      "id": "401872983",
+      "week": 5,
+      "date": "2026-10-11T17:00Z",
+      "homeTeamId": "20",
+      "awayTeamId": "5"
+    },
+    {
+      "id": "401872985",
+      "week": 5,
+      "date": "2026-10-11T17:00Z",
+      "homeTeamId": "23",
+      "awayTeamId": "11"
+    },
+    {
+      "id": "401872988",
+      "week": 5,
+      "date": "2026-10-11T17:00Z",
+      "homeTeamId": "28",
+      "awayTeamId": "19"
+    },
+    {
+      "id": "401872989",
+      "week": 5,
+      "date": "2026-10-11T20:05Z",
+      "homeTeamId": "24",
+      "awayTeamId": "7"
+    },
+    {
+      "id": "401872990",
+      "week": 5,
+      "date": "2026-10-11T20:25Z",
+      "homeTeamId": "9",
+      "awayTeamId": "3"
+    },
+    {
+      "id": "401872991",
+      "week": 5,
+      "date": "2026-10-11T20:25Z",
+      "homeTeamId": "22",
+      "awayTeamId": "8"
+    },
+    {
+      "id": "401872992",
+      "week": 5,
+      "date": "2026-10-11T20:25Z",
+      "homeTeamId": "26",
+      "awayTeamId": "25"
+    },
+    {
+      "id": "401872993",
+      "week": 5,
+      "date": "2026-10-12T00:20Z",
+      "homeTeamId": "1",
+      "awayTeamId": "33"
+    },
+    {
+      "id": "401872994",
+      "week": 5,
+      "date": "2026-10-13T00:15Z",
+      "homeTeamId": "14",
+      "awayTeamId": "2"
+    },
+    {
+      "id": "401872995",
+      "week": 6,
+      "date": "2026-10-16T00:15Z",
+      "homeTeamId": "7",
+      "awayTeamId": "26"
+    },
+    {
+      "id": "401872996",
+      "week": 6,
+      "date": "2026-10-18T13:30Z",
+      "homeTeamId": "30",
+      "awayTeamId": "34"
+    },
+    {
+      "id": "401872999",
+      "week": 6,
+      "date": "2026-10-18T17:00Z",
+      "homeTeamId": "1",
+      "awayTeamId": "3"
+    },
+    {
+      "id": "401872997",
+      "week": 6,
+      "date": "2026-10-18T17:00Z",
+      "homeTeamId": "5",
+      "awayTeamId": "33"
+    },
+    {
+      "id": "401873003",
+      "week": 6,
+      "date": "2026-10-18T17:00Z",
+      "homeTeamId": "11",
+      "awayTeamId": "10"
+    },
+    {
+      "id": "401873001",
+      "week": 6,
+      "date": "2026-10-18T17:00Z",
+      "homeTeamId": "17",
+      "awayTeamId": "20"
+    },
+    {
+      "id": "401873000",
+      "week": 6,
+      "date": "2026-10-18T17:00Z",
+      "homeTeamId": "19",
+      "awayTeamId": "18"
+    },
+    {
+      "id": "401872998",
+      "week": 6,
+      "date": "2026-10-18T17:00Z",
+      "homeTeamId": "21",
+      "awayTeamId": "29"
+    },
+    {
+      "id": "401873002",
+      "week": 6,
+      "date": "2026-10-18T17:00Z",
+      "homeTeamId": "27",
+      "awayTeamId": "23"
+    },
+    {
+      "id": "401873004",
+      "week": 6,
+      "date": "2026-10-18T20:05Z",
+      "homeTeamId": "14",
+      "awayTeamId": "22"
+    },
+    {
+      "id": "401873006",
+      "week": 6,
+      "date": "2026-10-18T20:25Z",
+      "homeTeamId": "12",
+      "awayTeamId": "24"
+    },
+    {
+      "id": "401873005",
+      "week": 6,
+      "date": "2026-10-18T20:25Z",
+      "homeTeamId": "13",
+      "awayTeamId": "2"
+    },
+    {
+      "id": "401873007",
+      "week": 6,
+      "date": "2026-10-19T00:20Z",
+      "homeTeamId": "9",
+      "awayTeamId": "6"
+    },
+    {
+      "id": "401873008",
+      "week": 6,
+      "date": "2026-10-20T00:15Z",
+      "homeTeamId": "25",
+      "awayTeamId": "28"
+    },
+    {
+      "id": "401873010",
+      "week": 7,
+      "date": "2026-10-23T00:15Z",
+      "homeTeamId": "3",
+      "awayTeamId": "17"
+    },
+    {
+      "id": "401873011",
+      "week": 7,
+      "date": "2026-10-25T13:30Z",
+      "homeTeamId": "18",
+      "awayTeamId": "23"
+    },
+    {
+      "id": "401873017",
+      "week": 7,
+      "date": "2026-10-25T17:00Z",
+      "homeTeamId": "1",
+      "awayTeamId": "25"
+    },
+    {
+      "id": "401873013",
+      "week": 7,
+      "date": "2026-10-25T17:00Z",
+      "homeTeamId": "10",
+      "awayTeamId": "5"
+    },
+    {
+      "id": "401873014",
+      "week": 7,
+      "date": "2026-10-25T17:00Z",
+      "homeTeamId": "16",
+      "awayTeamId": "11"
+    },
+    {
+      "id": "401873015",
+      "week": 7,
+      "date": "2026-10-25T17:00Z",
+      "homeTeamId": "20",
+      "awayTeamId": "15"
+    },
+    {
+      "id": "401873018",
+      "week": 7,
+      "date": "2026-10-25T17:00Z",
+      "homeTeamId": "29",
+      "awayTeamId": "27"
+    },
+    {
+      "id": "401873012",
+      "week": 7,
+      "date": "2026-10-25T17:00Z",
+      "homeTeamId": "33",
+      "awayTeamId": "4"
+    },
+    {
+      "id": "401873016",
+      "week": 7,
+      "date": "2026-10-25T17:00Z",
+      "homeTeamId": "34",
+      "awayTeamId": "19"
+    },
+    {
+      "id": "401873019",
+      "week": 7,
+      "date": "2026-10-25T20:05Z",
+      "homeTeamId": "22",
+      "awayTeamId": "7"
+    },
+    {
+      "id": "401873020",
+      "week": 7,
+      "date": "2026-10-25T20:25Z",
+      "homeTeamId": "8",
+      "awayTeamId": "9"
+    },
+    {
+      "id": "401873021",
+      "week": 7,
+      "date": "2026-10-25T20:25Z",
+      "homeTeamId": "13",
+      "awayTeamId": "14"
+    },
+    {
+      "id": "401873022",
+      "week": 7,
+      "date": "2026-10-26T00:20Z",
+      "homeTeamId": "26",
+      "awayTeamId": "12"
+    },
+    {
+      "id": "401873009",
+      "week": 7,
+      "date": "2026-10-27T00:15Z",
+      "homeTeamId": "21",
+      "awayTeamId": "6"
+    },
+    {
+      "id": "401873023",
+      "week": 8,
+      "date": "2026-10-30T00:15Z",
+      "homeTeamId": "9",
+      "awayTeamId": "29"
+    },
+    {
+      "id": "401873026",
+      "week": 8,
+      "date": "2026-11-01T18:00Z",
+      "homeTeamId": "2",
+      "awayTeamId": "33"
+    },
+    {
+      "id": "401873031",
+      "week": 8,
+      "date": "2026-11-01T18:00Z",
+      "homeTeamId": "4",
+      "awayTeamId": "10"
+    },
+    {
+      "id": "401873024",
+      "week": 8,
+      "date": "2026-11-01T18:00Z",
+      "homeTeamId": "6",
+      "awayTeamId": "22"
+    },
+    {
+      "id": "401873030",
+      "week": 8,
+      "date": "2026-11-01T18:00Z",
+      "homeTeamId": "8",
+      "awayTeamId": "16"
+    },
+    {
+      "id": "401873029",
+      "week": 8,
+      "date": "2026-11-01T18:00Z",
+      "homeTeamId": "20",
+      "awayTeamId": "13"
+    },
+    {
+      "id": "401873027",
+      "week": 8,
+      "date": "2026-11-01T18:00Z",
+      "homeTeamId": "23",
+      "awayTeamId": "5"
+    },
+    {
+      "id": "401873025",
+      "week": 8,
+      "date": "2026-11-01T18:00Z",
+      "homeTeamId": "27",
+      "awayTeamId": "1"
+    },
+    {
+      "id": "401873028",
+      "week": 8,
+      "date": "2026-11-01T18:00Z",
+      "homeTeamId": "30",
+      "awayTeamId": "11"
+    },
+    {
+      "id": "401873032",
+      "week": 8,
+      "date": "2026-11-01T21:05Z",
+      "homeTeamId": "14",
+      "awayTeamId": "24"
+    },
+    {
+      "id": "401873033",
+      "week": 8,
+      "date": "2026-11-01T21:25Z",
+      "homeTeamId": "7",
+      "awayTeamId": "12"
+    },
+    {
+      "id": "401873034",
+      "week": 8,
+      "date": "2026-11-01T21:25Z",
+      "homeTeamId": "15",
+      "awayTeamId": "17"
+    },
+    {
+      "id": "401873035",
+      "week": 8,
+      "date": "2026-11-02T01:20Z",
+      "homeTeamId": "28",
+      "awayTeamId": "21"
+    },
+    {
+      "id": "401873036",
+      "week": 8,
+      "date": "2026-11-03T01:15Z",
+      "homeTeamId": "26",
+      "awayTeamId": "3"
+    },
+    {
+      "id": "401873037",
+      "week": 9,
+      "date": "2026-11-06T01:15Z",
+      "homeTeamId": "33",
+      "awayTeamId": "30"
+    },
+    {
+      "id": "401873038",
+      "week": 9,
+      "date": "2026-11-08T14:30Z",
+      "homeTeamId": "1",
+      "awayTeamId": "4"
+    },
+    {
+      "id": "401873040",
+      "week": 9,
+      "date": "2026-11-08T18:00Z",
+      "homeTeamId": "11",
+      "awayTeamId": "6"
+    },
+    {
+      "id": "401873045",
+      "week": 9,
+      "date": "2026-11-08T18:00Z",
+      "homeTeamId": "12",
+      "awayTeamId": "20"
+    },
+    {
+      "id": "401873042",
+      "week": 9,
+      "date": "2026-11-08T18:00Z",
+      "homeTeamId": "15",
+      "awayTeamId": "8"
+    },
+    {
+      "id": "401873039",
+      "week": 9,
+      "date": "2026-11-08T18:00Z",
+      "homeTeamId": "18",
+      "awayTeamId": "5"
+    },
+    {
+      "id": "401873044",
+      "week": 9,
+      "date": "2026-11-08T18:00Z",
+      "homeTeamId": "21",
+      "awayTeamId": "19"
+    },
+    {
+      "id": "401873043",
+      "week": 9,
+      "date": "2026-11-08T18:00Z",
+      "homeTeamId": "28",
+      "awayTeamId": "14"
+    },
+    {
+      "id": "401873041",
+      "week": 9,
+      "date": "2026-11-08T18:00Z",
+      "homeTeamId": "29",
+      "awayTeamId": "7"
+    },
+    {
+      "id": "401873046",
+      "week": 9,
+      "date": "2026-11-08T21:05Z",
+      "homeTeamId": "24",
+      "awayTeamId": "34"
+    },
+    {
+      "id": "401873047",
+      "week": 9,
+      "date": "2026-11-08T21:05Z",
+      "homeTeamId": "25",
+      "awayTeamId": "13"
+    },
+    {
+      "id": "401873049",
+      "week": 9,
+      "date": "2026-11-08T21:25Z",
+      "homeTeamId": "17",
+      "awayTeamId": "9"
+    },
+    {
+      "id": "401873048",
+      "week": 9,
+      "date": "2026-11-08T21:25Z",
+      "homeTeamId": "26",
+      "awayTeamId": "22"
+    },
+    {
+      "id": "401873050",
+      "week": 9,
+      "date": "2026-11-09T01:20Z",
+      "homeTeamId": "3",
+      "awayTeamId": "27"
+    },
+    {
+      "id": "401873051",
+      "week": 9,
+      "date": "2026-11-10T01:15Z",
+      "homeTeamId": "16",
+      "awayTeamId": "2"
+    },
+    {
+      "id": "401873052",
+      "week": 10,
+      "date": "2026-11-13T01:15Z",
+      "homeTeamId": "19",
+      "awayTeamId": "28"
+    },
+    {
+      "id": "401873053",
+      "week": 10,
+      "date": "2026-11-15T14:30Z",
+      "homeTeamId": "8",
+      "awayTeamId": "17"
+    },
+    {
+      "id": "401873058",
+      "week": 10,
+      "date": "2026-11-15T18:00Z",
+      "homeTeamId": "1",
+      "awayTeamId": "12"
+    },
+    {
+      "id": "401873056",
+      "week": 10,
+      "date": "2026-11-15T18:00Z",
+      "homeTeamId": "5",
+      "awayTeamId": "34"
+    },
+    {
+      "id": "401873060",
+      "week": 10,
+      "date": "2026-11-15T18:00Z",
+      "homeTeamId": "9",
+      "awayTeamId": "16"
+    },
+    {
+      "id": "401873057",
+      "week": 10,
+      "date": "2026-11-15T18:00Z",
+      "homeTeamId": "10",
+      "awayTeamId": "30"
+    },
+    {
+      "id": "401873059",
+      "week": 10,
+      "date": "2026-11-15T18:00Z",
+      "homeTeamId": "11",
+      "awayTeamId": "15"
+    },
+    {
+      "id": "401873055",
+      "week": 10,
+      "date": "2026-11-15T18:00Z",
+      "homeTeamId": "18",
+      "awayTeamId": "29"
+    },
+    {
+      "id": "401873054",
+      "week": 10,
+      "date": "2026-11-15T18:00Z",
+      "homeTeamId": "20",
+      "awayTeamId": "2"
+    },
+    {
+      "id": "401873062",
+      "week": 10,
+      "date": "2026-11-15T21:05Z",
+      "homeTeamId": "13",
+      "awayTeamId": "26"
+    },
+    {
+      "id": "401873061",
+      "week": 10,
+      "date": "2026-11-15T21:05Z",
+      "homeTeamId": "22",
+      "awayTeamId": "14"
+    },
+    {
+      "id": "401873063",
+      "week": 10,
+      "date": "2026-11-15T21:25Z",
+      "homeTeamId": "6",
+      "awayTeamId": "25"
+    },
+    {
+      "id": "401873064",
+      "week": 10,
+      "date": "2026-11-16T01:20Z",
+      "homeTeamId": "4",
+      "awayTeamId": "23"
+    },
+    {
+      "id": "401873065",
+      "week": 10,
+      "date": "2026-11-17T01:15Z",
+      "homeTeamId": "33",
+      "awayTeamId": "24"
+    },
+    {
+      "id": "401873066",
+      "week": 11,
+      "date": "2026-11-20T01:15Z",
+      "homeTeamId": "34",
+      "awayTeamId": "11"
+    },
+    {
+      "id": "401873070",
+      "week": 11,
+      "date": "2026-11-22T18:00Z",
+      "homeTeamId": "2",
+      "awayTeamId": "15"
+    },
+    {
+      "id": "401873071",
+      "week": 11,
+      "date": "2026-11-22T18:00Z",
+      "homeTeamId": "3",
+      "awayTeamId": "18"
+    },
+    {
+      "id": "401873073",
+      "week": 11,
+      "date": "2026-11-22T18:00Z",
+      "homeTeamId": "6",
+      "awayTeamId": "10"
+    },
+    {
+      "id": "401873072",
+      "week": 11,
+      "date": "2026-11-22T18:00Z",
+      "homeTeamId": "8",
+      "awayTeamId": "27"
+    },
+    {
+      "id": "401873067",
+      "week": 11,
+      "date": "2026-11-22T18:00Z",
+      "homeTeamId": "12",
+      "awayTeamId": "22"
+    },
+    {
+      "id": "401873069",
+      "week": 11,
+      "date": "2026-11-22T18:00Z",
+      "homeTeamId": "19",
+      "awayTeamId": "30"
+    },
+    {
+      "id": "401873068",
+      "week": 11,
+      "date": "2026-11-22T18:00Z",
+      "homeTeamId": "29",
+      "awayTeamId": "33"
+    },
+    {
+      "id": "401873074",
+      "week": 11,
+      "date": "2026-11-22T21:05Z",
+      "homeTeamId": "24",
+      "awayTeamId": "20"
+    },
+    {
+      "id": "401873075",
+      "week": 11,
+      "date": "2026-11-22T21:25Z",
+      "homeTeamId": "7",
+      "awayTeamId": "13"
+    },
+    {
+      "id": "401873076",
+      "week": 11,
+      "date": "2026-11-22T21:25Z",
+      "homeTeamId": "21",
+      "awayTeamId": "23"
+    },
+    {
+      "id": "401873077",
+      "week": 11,
+      "date": "2026-11-23T01:20Z",
+      "homeTeamId": "25",
+      "awayTeamId": "16"
+    },
+    {
+      "id": "401873078",
+      "week": 11,
+      "date": "2026-11-24T01:15Z",
+      "homeTeamId": "28",
+      "awayTeamId": "4"
+    },
+    {
+      "id": "401873079",
+      "week": 12,
+      "date": "2026-11-26T01:00Z",
+      "homeTeamId": "14",
+      "awayTeamId": "9"
+    },
+    {
+      "id": "401873081",
+      "week": 12,
+      "date": "2026-11-26T18:00Z",
+      "homeTeamId": "8",
+      "awayTeamId": "3"
+    },
+    {
+      "id": "401873080",
+      "week": 12,
+      "date": "2026-11-26T21:30Z",
+      "homeTeamId": "6",
+      "awayTeamId": "21"
+    },
+    {
+      "id": "401873082",
+      "week": 12,
+      "date": "2026-11-27T01:20Z",
+      "homeTeamId": "2",
+      "awayTeamId": "12"
+    },
+    {
+      "id": "401873083",
+      "week": 12,
+      "date": "2026-11-27T20:00Z",
+      "homeTeamId": "23",
+      "awayTeamId": "7"
+    },
+    {
+      "id": "401873087",
+      "week": 12,
+      "date": "2026-11-29T18:00Z",
+      "homeTeamId": "4",
+      "awayTeamId": "18"
+    },
+    {
+      "id": "401873086",
+      "week": 12,
+      "date": "2026-11-29T18:00Z",
+      "homeTeamId": "5",
+      "awayTeamId": "13"
+    },
+    {
+      "id": "401873088",
+      "week": 12,
+      "date": "2026-11-29T18:00Z",
+      "homeTeamId": "11",
+      "awayTeamId": "19"
+    },
+    {
+      "id": "401873089",
+      "week": 12,
+      "date": "2026-11-29T18:00Z",
+      "homeTeamId": "15",
+      "awayTeamId": "20"
+    },
+    {
+      "id": "401873084",
+      "week": 12,
+      "date": "2026-11-29T18:00Z",
+      "homeTeamId": "16",
+      "awayTeamId": "1"
+    },
+    {
+      "id": "401873085",
+      "week": 12,
+      "date": "2026-11-29T18:00Z",
+      "homeTeamId": "34",
+      "awayTeamId": "33"
+    },
+    {
+      "id": "401873090",
+      "week": 12,
+      "date": "2026-11-29T21:05Z",
+      "homeTeamId": "30",
+      "awayTeamId": "10"
+    },
+    {
+      "id": "401873092",
+      "week": 12,
+      "date": "2026-11-29T21:25Z",
+      "homeTeamId": "22",
+      "awayTeamId": "28"
+    },
+    {
+      "id": "401873091",
+      "week": 12,
+      "date": "2026-11-29T21:25Z",
+      "homeTeamId": "25",
+      "awayTeamId": "26"
+    },
+    {
+      "id": "401873093",
+      "week": 12,
+      "date": "2026-11-30T01:20Z",
+      "homeTeamId": "24",
+      "awayTeamId": "17"
+    },
+    {
+      "id": "401873094",
+      "week": 12,
+      "date": "2026-12-01T01:15Z",
+      "homeTeamId": "27",
+      "awayTeamId": "29"
+    },
+    {
+      "id": "401873096",
+      "week": 13,
+      "date": "2026-12-04T01:15Z",
+      "homeTeamId": "14",
+      "awayTeamId": "12"
+    },
+    {
+      "id": "401873098",
+      "week": 13,
+      "date": "2026-12-06T18:00Z",
+      "homeTeamId": "1",
+      "awayTeamId": "8"
+    },
+    {
+      "id": "401873100",
+      "week": 13,
+      "date": "2026-12-06T18:00Z",
+      "homeTeamId": "3",
+      "awayTeamId": "30"
+    },
+    {
+      "id": "401873097",
+      "week": 13,
+      "date": "2026-12-06T18:00Z",
+      "homeTeamId": "5",
+      "awayTeamId": "4"
+    },
+    {
+      "id": "401873102",
+      "week": 13,
+      "date": "2026-12-06T18:00Z",
+      "homeTeamId": "10",
+      "awayTeamId": "28"
+    },
+    {
+      "id": "401873099",
+      "week": 13,
+      "date": "2026-12-06T18:00Z",
+      "homeTeamId": "18",
+      "awayTeamId": "9"
+    },
+    {
+      "id": "401873095",
+      "week": 13,
+      "date": "2026-12-06T18:00Z",
+      "homeTeamId": "19",
+      "awayTeamId": "25"
+    },
+    {
+      "id": "401873101",
+      "week": 13,
+      "date": "2026-12-06T18:00Z",
+      "homeTeamId": "27",
+      "awayTeamId": "24"
+    },
+    {
+      "id": "401873103",
+      "week": 13,
+      "date": "2026-12-06T21:05Z",
+      "homeTeamId": "7",
+      "awayTeamId": "15"
+    },
+    {
+      "id": "401873104",
+      "week": 13,
+      "date": "2026-12-06T21:05Z",
+      "homeTeamId": "22",
+      "awayTeamId": "21"
+    },
+    {
+      "id": "401873106",
+      "week": 13,
+      "date": "2026-12-06T21:25Z",
+      "homeTeamId": "16",
+      "awayTeamId": "29"
+    },
+    {
+      "id": "401873105",
+      "week": 13,
+      "date": "2026-12-06T21:25Z",
+      "homeTeamId": "17",
+      "awayTeamId": "2"
+    },
+    {
+      "id": "401873107",
+      "week": 13,
+      "date": "2026-12-07T01:20Z",
+      "homeTeamId": "23",
+      "awayTeamId": "34"
+    },
+    {
+      "id": "401873108",
+      "week": 13,
+      "date": "2026-12-08T01:15Z",
+      "homeTeamId": "26",
+      "awayTeamId": "6"
+    },
+    {
+      "id": "401873109",
+      "week": 14,
+      "date": "2026-12-11T01:15Z",
+      "homeTeamId": "17",
+      "awayTeamId": "16"
+    },
+    {
+      "id": "401873110",
+      "week": 14,
+      "date": "2026-12-13T18:00Z",
+      "homeTeamId": "5",
+      "awayTeamId": "1"
+    },
+    {
+      "id": "401873117",
+      "week": 14,
+      "date": "2026-12-13T18:00Z",
+      "homeTeamId": "8",
+      "awayTeamId": "10"
+    },
+    {
+      "id": "401873111",
+      "week": 14,
+      "date": "2026-12-13T18:00Z",
+      "homeTeamId": "15",
+      "awayTeamId": "3"
+    },
+    {
+      "id": "401873112",
+      "week": 14,
+      "date": "2026-12-13T18:00Z",
+      "homeTeamId": "20",
+      "awayTeamId": "7"
+    },
+    {
+      "id": "401873114",
+      "week": 14,
+      "date": "2026-12-13T18:00Z",
+      "homeTeamId": "21",
+      "awayTeamId": "11"
+    },
+    {
+      "id": "401873113",
+      "week": 14,
+      "date": "2026-12-13T18:00Z",
+      "homeTeamId": "28",
+      "awayTeamId": "34"
+    },
+    {
+      "id": "401873115",
+      "week": 14,
+      "date": "2026-12-13T18:00Z",
+      "homeTeamId": "29",
+      "awayTeamId": "18"
+    },
+    {
+      "id": "401873116",
+      "week": 14,
+      "date": "2026-12-13T18:00Z",
+      "homeTeamId": "33",
+      "awayTeamId": "27"
+    },
+    {
+      "id": "401873118",
+      "week": 14,
+      "date": "2026-12-13T21:05Z",
+      "homeTeamId": "13",
+      "awayTeamId": "24"
+    },
+    {
+      "id": "401873119",
+      "week": 14,
+      "date": "2026-12-13T21:25Z",
+      "homeTeamId": "4",
+      "awayTeamId": "12"
+    },
+    {
+      "id": "401873120",
+      "week": 14,
+      "date": "2026-12-13T21:25Z",
+      "homeTeamId": "25",
+      "awayTeamId": "14"
+    },
+    {
+      "id": "401873121",
+      "week": 14,
+      "date": "2026-12-13T21:25Z",
+      "homeTeamId": "26",
+      "awayTeamId": "19"
+    },
+    {
+      "id": "401873122",
+      "week": 14,
+      "date": "2026-12-14T01:20Z",
+      "homeTeamId": "9",
+      "awayTeamId": "2"
+    },
+    {
+      "id": "401873123",
+      "week": 14,
+      "date": "2026-12-15T01:15Z",
+      "homeTeamId": "30",
+      "awayTeamId": "23"
+    },
+    {
+      "id": "401873124",
+      "week": 15,
+      "date": "2026-12-18T01:15Z",
+      "homeTeamId": "24",
+      "awayTeamId": "25"
+    },
+    {
+      "id": "401873125",
+      "week": 15,
+      "date": "2026-12-19T22:00Z",
+      "homeTeamId": "21",
+      "awayTeamId": "26"
+    },
+    {
+      "id": "401873126",
+      "week": 15,
+      "date": "2026-12-20T01:20Z",
+      "homeTeamId": "2",
+      "awayTeamId": "3"
+    },
+    {
+      "id": "401873133",
+      "week": 15,
+      "date": "2026-12-20T18:00Z",
+      "homeTeamId": "9",
+      "awayTeamId": "15"
+    },
+    {
+      "id": "401873131",
+      "week": 15,
+      "date": "2026-12-20T18:00Z",
+      "homeTeamId": "10",
+      "awayTeamId": "11"
+    },
+    {
+      "id": "401873130",
+      "week": 15,
+      "date": "2026-12-20T18:00Z",
+      "homeTeamId": "19",
+      "awayTeamId": "5"
+    },
+    {
+      "id": "401873128",
+      "week": 15,
+      "date": "2026-12-20T18:00Z",
+      "homeTeamId": "23",
+      "awayTeamId": "33"
+    },
+    {
+      "id": "401873134",
+      "week": 15,
+      "date": "2026-12-20T18:00Z",
+      "homeTeamId": "27",
+      "awayTeamId": "18"
+    },
+    {
+      "id": "401873127",
+      "week": 15,
+      "date": "2026-12-20T18:00Z",
+      "homeTeamId": "28",
+      "awayTeamId": "1"
+    },
+    {
+      "id": "401873129",
+      "week": 15,
+      "date": "2026-12-20T18:00Z",
+      "homeTeamId": "29",
+      "awayTeamId": "4"
+    },
+    {
+      "id": "401873132",
+      "week": 15,
+      "date": "2026-12-20T18:00Z",
+      "homeTeamId": "34",
+      "awayTeamId": "30"
+    },
+    {
+      "id": "401873135",
+      "week": 15,
+      "date": "2026-12-20T21:05Z",
+      "homeTeamId": "22",
+      "awayTeamId": "20"
+    },
+    {
+      "id": "401873137",
+      "week": 15,
+      "date": "2026-12-20T21:25Z",
+      "homeTeamId": "13",
+      "awayTeamId": "7"
+    },
+    {
+      "id": "401873136",
+      "week": 15,
+      "date": "2026-12-20T21:25Z",
+      "homeTeamId": "14",
+      "awayTeamId": "6"
+    },
+    {
+      "id": "401873138",
+      "week": 15,
+      "date": "2026-12-21T01:20Z",
+      "homeTeamId": "16",
+      "awayTeamId": "8"
+    },
+    {
+      "id": "401873139",
+      "week": 15,
+      "date": "2026-12-22T01:15Z",
+      "homeTeamId": "12",
+      "awayTeamId": "17"
+    },
+    {
+      "id": "401873140",
+      "week": 16,
+      "date": "2026-12-25T01:15Z",
+      "homeTeamId": "21",
+      "awayTeamId": "34"
+    },
+    {
+      "id": "401873141",
+      "week": 16,
+      "date": "2026-12-25T18:00Z",
+      "homeTeamId": "3",
+      "awayTeamId": "9"
+    },
+    {
+      "id": "401873142",
+      "week": 16,
+      "date": "2026-12-25T21:30Z",
+      "homeTeamId": "7",
+      "awayTeamId": "2"
+    },
+    {
+      "id": "401873143",
+      "week": 16,
+      "date": "2026-12-26T01:15Z",
+      "homeTeamId": "26",
+      "awayTeamId": "14"
+    },
+    {
+      "id": "401873146",
+      "week": 16,
+      "date": "2026-12-27T05:00Z",
+      "homeTeamId": "1",
+      "awayTeamId": "27"
+    },
+    {
+      "id": "401873145",
+      "week": 16,
+      "date": "2026-12-27T05:00Z",
+      "homeTeamId": "11",
+      "awayTeamId": "4"
+    },
+    {
+      "id": "401873147",
+      "week": 16,
+      "date": "2026-12-27T05:00Z",
+      "homeTeamId": "16",
+      "awayTeamId": "28"
+    },
+    {
+      "id": "401873144",
+      "week": 16,
+      "date": "2026-12-27T05:00Z",
+      "homeTeamId": "23",
+      "awayTeamId": "29"
+    },
+    {
+      "id": "401873150",
+      "week": 16,
+      "date": "2026-12-27T18:00Z",
+      "homeTeamId": "15",
+      "awayTeamId": "24"
+    },
+    {
+      "id": "401873148",
+      "week": 16,
+      "date": "2026-12-27T18:00Z",
+      "homeTeamId": "18",
+      "awayTeamId": "22"
+    },
+    {
+      "id": "401873151",
+      "week": 16,
+      "date": "2026-12-27T18:00Z",
+      "homeTeamId": "20",
+      "awayTeamId": "17"
+    },
+    {
+      "id": "401873149",
+      "week": 16,
+      "date": "2026-12-27T18:00Z",
+      "homeTeamId": "33",
+      "awayTeamId": "5"
+    },
+    {
+      "id": "401873152",
+      "week": 16,
+      "date": "2026-12-27T21:05Z",
+      "homeTeamId": "13",
+      "awayTeamId": "10"
+    },
+    {
+      "id": "401873153",
+      "week": 16,
+      "date": "2026-12-27T21:25Z",
+      "homeTeamId": "12",
+      "awayTeamId": "25"
+    },
+    {
+      "id": "401873154",
+      "week": 16,
+      "date": "2026-12-28T01:20Z",
+      "homeTeamId": "6",
+      "awayTeamId": "30"
+    },
+    {
+      "id": "401873155",
+      "week": 16,
+      "date": "2026-12-29T01:15Z",
+      "homeTeamId": "8",
+      "awayTeamId": "19"
+    },
+    {
+      "id": "401873156",
+      "week": 17,
+      "date": "2027-01-01T01:15Z",
+      "homeTeamId": "4",
+      "awayTeamId": "33"
+    },
+    {
+      "id": "401873157",
+      "week": 17,
+      "date": "2027-01-03T05:00Z",
+      "homeTeamId": "17",
+      "awayTeamId": "7"
+    },
+    {
+      "id": "401873158",
+      "week": 17,
+      "date": "2027-01-03T05:00Z",
+      "homeTeamId": "24",
+      "awayTeamId": "12"
+    },
+    {
+      "id": "401873159",
+      "week": 17,
+      "date": "2027-01-03T05:00Z",
+      "homeTeamId": "27",
+      "awayTeamId": "14"
+    },
+    {
+      "id": "401873160",
+      "week": 17,
+      "date": "2027-01-03T05:00Z",
+      "homeTeamId": "30",
+      "awayTeamId": "28"
+    },
+    {
+      "id": "401873164",
+      "week": 17,
+      "date": "2027-01-03T18:00Z",
+      "homeTeamId": "1",
+      "awayTeamId": "18"
+    },
+    {
+      "id": "401873162",
+      "week": 17,
+      "date": "2027-01-03T18:00Z",
+      "homeTeamId": "5",
+      "awayTeamId": "11"
+    },
+    {
+      "id": "401873165",
+      "week": 17,
+      "date": "2027-01-03T18:00Z",
+      "homeTeamId": "6",
+      "awayTeamId": "19"
+    },
+    {
+      "id": "401873166",
+      "week": 17,
+      "date": "2027-01-03T18:00Z",
+      "homeTeamId": "10",
+      "awayTeamId": "23"
+    },
+    {
+      "id": "401873161",
+      "week": 17,
+      "date": "2027-01-03T18:00Z",
+      "homeTeamId": "15",
+      "awayTeamId": "2"
+    },
+    {
+      "id": "401873163",
+      "week": 17,
+      "date": "2027-01-03T18:00Z",
+      "homeTeamId": "20",
+      "awayTeamId": "16"
+    },
+    {
+      "id": "401873167",
+      "week": 17,
+      "date": "2027-01-03T18:00Z",
+      "homeTeamId": "29",
+      "awayTeamId": "26"
+    },
+    {
+      "id": "401873168",
+      "week": 17,
+      "date": "2027-01-03T21:05Z",
+      "homeTeamId": "22",
+      "awayTeamId": "13"
+    },
+    {
+      "id": "401873169",
+      "week": 17,
+      "date": "2027-01-03T21:25Z",
+      "homeTeamId": "3",
+      "awayTeamId": "8"
+    },
+    {
+      "id": "401873170",
+      "week": 17,
+      "date": "2027-01-04T01:20Z",
+      "homeTeamId": "25",
+      "awayTeamId": "21"
+    },
+    {
+      "id": "401873171",
+      "week": 17,
+      "date": "2027-01-05T01:15Z",
+      "homeTeamId": "9",
+      "awayTeamId": "34"
+    },
+    {
+      "id": "401873181",
+      "week": 18,
+      "date": "2027-01-10T05:00Z",
+      "homeTeamId": "2",
+      "awayTeamId": "20"
+    },
+    {
+      "id": "401873174",
+      "week": 18,
+      "date": "2027-01-10T05:00Z",
+      "homeTeamId": "4",
+      "awayTeamId": "5"
+    },
+    {
+      "id": "401873179",
+      "week": 18,
+      "date": "2027-01-10T05:00Z",
+      "homeTeamId": "7",
+      "awayTeamId": "24"
+    },
+    {
+      "id": "401873176",
+      "week": 18,
+      "date": "2027-01-10T05:00Z",
+      "homeTeamId": "9",
+      "awayTeamId": "8"
+    },
+    {
+      "id": "401873177",
+      "week": 18,
+      "date": "2027-01-10T05:00Z",
+      "homeTeamId": "11",
+      "awayTeamId": "30"
+    },
+    {
+      "id": "401873178",
+      "week": 18,
+      "date": "2027-01-10T05:00Z",
+      "homeTeamId": "12",
+      "awayTeamId": "13"
+    },
+    {
+      "id": "401873185",
+      "week": 18,
+      "date": "2027-01-10T05:00Z",
+      "homeTeamId": "14",
+      "awayTeamId": "26"
+    },
+    {
+      "id": "401873173",
+      "week": 18,
+      "date": "2027-01-10T05:00Z",
+      "homeTeamId": "16",
+      "awayTeamId": "3"
+    },
+    {
+      "id": "401873180",
+      "week": 18,
+      "date": "2027-01-10T05:00Z",
+      "homeTeamId": "17",
+      "awayTeamId": "15"
+    },
+    {
+      "id": "401873186",
+      "week": 18,
+      "date": "2027-01-10T05:00Z",
+      "homeTeamId": "18",
+      "awayTeamId": "27"
+    },
+    {
+      "id": "401873182",
+      "week": 18,
+      "date": "2027-01-10T05:00Z",
+      "homeTeamId": "19",
+      "awayTeamId": "21"
+    },
+    {
+      "id": "401873184",
+      "week": 18,
+      "date": "2027-01-10T05:00Z",
+      "homeTeamId": "22",
+      "awayTeamId": "25"
+    },
+    {
+      "id": "401873175",
+      "week": 18,
+      "date": "2027-01-10T05:00Z",
+      "homeTeamId": "28",
+      "awayTeamId": "6"
+    },
+    {
+      "id": "401873172",
+      "week": 18,
+      "date": "2027-01-10T05:00Z",
+      "homeTeamId": "29",
+      "awayTeamId": "1"
+    },
+    {
+      "id": "401873183",
+      "week": 18,
+      "date": "2027-01-10T05:00Z",
+      "homeTeamId": "33",
+      "awayTeamId": "23"
+    },
+    {
+      "id": "401873187",
+      "week": 18,
+      "date": "2027-01-10T05:00Z",
+      "homeTeamId": "34",
+      "awayTeamId": "10"
+    }
+  ]
+}
