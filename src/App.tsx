@@ -2,6 +2,7 @@ import { useMemo } from 'react';
 import type { ScheduleData, Team } from './data/types';
 import { PicksProvider, usePicksContext } from './context/PicksContext';
 import { StandingsPanel } from './components/StandingsPanel';
+import { ProgressToolbar } from './components/ProgressToolbar';
 import { PlayoffBracket } from './components/PlayoffBracket';
 import { DivisionSection } from './components/DivisionSection';
 import scheduleData from '../public/schedule-2026.json';
@@ -42,14 +43,14 @@ function AppContent() {
         <p>Pick winners on any team schedule — picks sync across both teams automatically.</p>
       </header>
 
-      <div className="sticky-panel">
-        <StandingsPanel
-          afc={standings.afc}
-          nfc={standings.nfc}
-          pickedCount={pickedCount}
-          totalGames={schedule.games.length}
-          onClearAll={clearAll}
-        />
+      <ProgressToolbar
+        pickedCount={pickedCount}
+        totalGames={schedule.games.length}
+        onClearAll={clearAll}
+      />
+
+      <div className="top-panel">
+        <StandingsPanel afc={standings.afc} nfc={standings.nfc} />
         <PlayoffBracket bracket={bracket} />
       </div>
 

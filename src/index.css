@@ -15,6 +15,11 @@
 body {
   margin: 0;
   min-width: 320px;
+  overflow-y: auto;
+}
+
+html {
+  overflow-y: scroll;
 }
 
 #root {
@@ -43,10 +48,24 @@ body {
   font-size: 0.95rem;
 }
 
-.sticky-panel {
+.sticky-toolbar {
   position: sticky;
   top: 0;
   z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.top-panel {
   background: #fff;
   border: 1px solid #ddd;
   border-radius: 8px;

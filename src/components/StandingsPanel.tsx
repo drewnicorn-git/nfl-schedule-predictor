@@ -3,36 +3,11 @@ import type { ConferenceStandings, StandingEntry } from '../data/types';
 interface StandingsPanelProps {
   afc: ConferenceStandings;
   nfc: ConferenceStandings;
-  pickedCount: number;
-  totalGames: number;
-  onClearAll: () => void;
 }
 
-export function StandingsPanel({
-  afc,
-  nfc,
-  pickedCount,
-  totalGames,
-  onClearAll,
-}: StandingsPanelProps) {
-  const pct = totalGames > 0 ? Math.round((pickedCount / totalGames) * 100) : 0;
-
+export function StandingsPanel({ afc, nfc }: StandingsPanelProps) {
   return (
     <div className="standings-panel">
-      <div className="panel-toolbar">
-        <div className="progress">
-          <span>
-            {pickedCount}/{totalGames} games picked ({pct}%)
-          </span>
-          <div className="progress-bar">
-            <div className="progress-fill" style={{ width: `${pct}%` }} />
-          </div>
-        </div>
-        <button type="button" className="clear-btn" onClick={onClearAll}>
-          Clear All
-        </button>
-      </div>
-
       <div className="standings-grid">
         <ConferenceStandingsTable standings={afc} />
         <ConferenceStandingsTable standings={nfc} />
