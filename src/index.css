@@ -4,18 +4,73 @@
   box-sizing: border-box;
 }
 
+:root,
+[data-theme='light'] {
+  --bg: #f0f2f5;
+  --surface: #ffffff;
+  --surface-muted: #fafafa;
+  --text: #1a1a1a;
+  --text-muted: #555555;
+  --text-subtle: #666666;
+  --text-faint: #888888;
+  --text-placeholder: #999999;
+  --border: #dddddd;
+  --border-light: #eeeeee;
+  --border-strong: #333333;
+  --shadow: rgba(0, 0, 0, 0.08);
+  --progress-track: #e0e0e0;
+  --progress-fill: #2e7d32;
+  --clear-border: #c62828;
+  --clear-text: #c62828;
+  --clear-hover: #ffebee;
+  --playoff-bg: #e8f5e9;
+  --picked-row: #f9fbe7;
+  --btn-bg: #ffffff;
+  --matchup-border: #cccccc;
+  --champ: #f57c00;
+  --division-text: #444444;
+}
+
+[data-theme='dark'] {
+  --bg: #121212;
+  --surface: #1e1e1e;
+  --surface-muted: #252525;
+  --text: #e8e8e8;
+  --text-muted: #b0b0b0;
+  --text-subtle: #9a9a9a;
+  --text-faint: #808080;
+  --text-placeholder: #707070;
+  --border: #3a3a3a;
+  --border-light: #2e2e2e;
+  --border-strong: #cccccc;
+  --shadow: rgba(0, 0, 0, 0.35);
+  --progress-track: #3a3a3a;
+  --progress-fill: #66bb6a;
+  --clear-border: #ef5350;
+  --clear-text: #ef5350;
+  --clear-hover: #3a2020;
+  --playoff-bg: #1b3a1f;
+  --picked-row: #2a2f1a;
+  --btn-bg: #2a2a2a;
+  --matchup-border: #555555;
+  --champ: #ffb74d;
+  --division-text: #cccccc;
+}
+
 :root {
   font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  color: #1a1a1a;
-  background: #f0f2f5;
+  color: var(--text);
+  background: var(--bg);
 }
 
 body {
   margin: 0;
   min-width: 320px;
   overflow-y: auto;
+  background: var(--bg);
+  color: var(--text);
 }
 
 html {
@@ -44,7 +99,7 @@ html {
 
 .app-header p {
   margin: 0;
-  color: #555;
+  color: var(--text-muted);
   font-size: 0.95rem;
 }
 
@@ -57,21 +112,27 @@ html {
   justify-content: space-between;
   gap: 1rem;
   flex-wrap: wrap;
-  background: #fff;
-  border: 1px solid #ddd;
+  background: var(--surface);
+  border: 1px solid var(--border);
   border-radius: 8px;
   padding: 0.75rem 1rem;
   margin-bottom: 1rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 8px var(--shadow);
+}
+
+.toolbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .top-panel {
-  background: #fff;
-  border: 1px solid #ddd;
+  background: var(--surface);
+  border: 1px solid var(--border);
   border-radius: 8px;
   padding: 1rem;
   margin-bottom: 2rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 8px var(--shadow);
 }
 
 .panel-toolbar {
@@ -90,7 +151,7 @@ html {
 
 .progress-bar {
   height: 8px;
-  background: #e0e0e0;
+  background: var(--progress-track);
   border-radius: 4px;
   margin-top: 0.35rem;
   overflow: hidden;
@@ -98,23 +159,38 @@ html {
 
 .progress-fill {
   height: 100%;
-  background: #2e7d32;
+  background: var(--progress-fill);
   border-radius: 4px;
   transition: width 0.2s;
 }
 
+.theme-toggle {
+  padding: 0.4rem 0.65rem;
+  border: 1px solid var(--border);
+  background: var(--surface-muted);
+  color: var(--text);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.theme-toggle:hover {
+  background: var(--border-light);
+}
+
 .clear-btn {
   padding: 0.4rem 0.8rem;
-  border: 1px solid #c62828;
-  background: #fff;
-  color: #c62828;
+  border: 1px solid var(--clear-border);
+  background: var(--surface);
+  color: var(--clear-text);
   border-radius: 4px;
   cursor: pointer;
   font-size: 0.875rem;
 }
 
 .clear-btn:hover {
-  background: #ffebee;
+  background: var(--clear-hover);
 }
 
 .standings-grid {
@@ -141,7 +217,7 @@ html {
 .div-standings h4 {
   margin: 0 0 0.25rem;
   font-size: 0.85rem;
-  color: #666;
+  color: var(--text-subtle);
   text-transform: uppercase;
   letter-spacing: 0.03em;
 }
@@ -159,17 +235,17 @@ html {
 .team-schedule td {
   padding: 0.2rem 0.4rem;
   text-align: left;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid var(--border-light);
 }
 
 .div-standings th,
 .team-schedule th {
   font-weight: 600;
-  color: #555;
+  color: var(--text-muted);
 }
 
 .playoff-team {
-  background: #e8f5e9;
+  background: var(--playoff-bg);
 }
 
 .team-dot {
@@ -182,13 +258,13 @@ html {
 }
 
 .div-champ {
-  color: #f57c00;
+  color: var(--champ);
   margin-left: 2px;
 }
 
 .tiebreaker-note {
   font-size: 0.75rem;
-  color: #888;
+  color: var(--text-faint);
   margin: 0.75rem 0 0;
   cursor: help;
 }
@@ -196,7 +272,7 @@ html {
 .playoff-bracket {
   margin-top: 1.5rem;
   padding-top: 1rem;
-  border-top: 1px solid #eee;
+  border-top: 1px solid var(--border-light);
 }
 
 .playoff-bracket h3 {
@@ -226,7 +302,7 @@ html {
 .bracket-round h5 {
   margin: 0 0 0.5rem;
   font-size: 0.8rem;
-  color: #666;
+  color: var(--text-subtle);
   text-transform: uppercase;
 }
 
@@ -236,21 +312,21 @@ html {
   gap: 0.5rem;
   padding: 0.4rem;
   margin-bottom: 0.4rem;
-  background: #fafafa;
+  background: var(--surface-muted);
   border-radius: 4px;
   flex-wrap: wrap;
 }
 
 .matchup-card.empty {
   justify-content: center;
-  color: #999;
+  color: var(--text-placeholder);
   min-height: 2rem;
 }
 
 .matchup-team {
   padding: 0.25rem 0.5rem;
-  border: 2px solid #ccc;
-  background: #fff;
+  border: 2px solid var(--matchup-border);
+  background: var(--btn-bg);
   border-radius: 4px;
   cursor: pointer;
   font-size: 0.8rem;
@@ -262,7 +338,7 @@ html {
   border: none;
   background: transparent;
   cursor: default;
-  color: #999;
+  color: var(--text-placeholder);
 }
 
 .matchup-team.selected {
@@ -277,7 +353,7 @@ html {
 
 .vs {
   font-size: 0.75rem;
-  color: #999;
+  color: var(--text-placeholder);
 }
 
 .super-bowl-section {
@@ -297,13 +373,13 @@ html {
   font-size: 1.5rem;
   margin: 0 0 1rem;
   padding-bottom: 0.5rem;
-  border-bottom: 2px solid #333;
+  border-bottom: 2px solid var(--border-strong);
 }
 
 .division-section h3 {
   margin: 0 0 0.75rem;
   font-size: 1rem;
-  color: #444;
+  color: var(--division-text);
 }
 
 .division-grid {
@@ -320,8 +396,8 @@ html {
 }
 
 .team-schedule {
-  background: #fff;
-  border: 1px solid #ddd;
+  background: var(--surface);
+  border: 1px solid var(--border);
   border-radius: 6px;
   overflow: hidden;
 }
@@ -332,7 +408,7 @@ html {
   gap: 0.5rem;
   padding: 0.5rem 0.75rem;
   border-left: 4px solid;
-  background: #fafafa;
+  background: var(--surface-muted);
 }
 
 .team-abbr {
@@ -365,7 +441,7 @@ html {
 .pick-btn {
   padding: 0.15rem 0.35rem;
   border: 1.5px solid;
-  background: #fff;
+  background: var(--btn-bg);
   border-radius: 3px;
   cursor: pointer;
   font-size: 0.7rem;
@@ -381,5 +457,5 @@ html {
 }
 
 tr.picked td {
-  background: #f9fbe7;
+  background: var(--picked-row);
 }

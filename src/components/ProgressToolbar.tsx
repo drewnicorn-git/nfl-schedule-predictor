@@ -1,3 +1,5 @@
+import { ThemeToggle } from './ThemeToggle';
+
 interface ProgressToolbarProps {
   pickedCount: number;
   totalGames: number;
@@ -17,9 +19,12 @@ export function ProgressToolbar({ pickedCount, totalGames, onClearAll }: Progres
           <div className="progress-fill" style={{ width: `${pct}%` }} />
         </div>
       </div>
-      <button type="button" className="clear-btn" onClick={onClearAll}>
-        Clear All
-      </button>
+      <div className="toolbar-actions">
+        <ThemeToggle />
+        <button type="button" className="clear-btn" onClick={onClearAll}>
+          Clear All
+        </button>
+      </div>
     </div>
   );
 }
